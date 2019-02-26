@@ -29,6 +29,7 @@ Config(){
     #解决环境依赖性
     dnf install -y fcitx fcitx-pinyin fcitx-configtool gnome-tweak-tool
     #开机启动fcitx
+    mkdir ~/.config/autostart
     cp fcitx.desktop ~/.config/autostart
     #重启时生效 默认输入法修改
     echo '#!/bin/bash' > /etc/profile.d/fcitx.sh
