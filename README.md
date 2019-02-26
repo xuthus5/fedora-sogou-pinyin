@@ -23,13 +23,13 @@ chmod +x *.sh
 如果你尚未安装fcitx(亦或你无法调用起fcitx),你可以使用如下命令,完成fcitx的配置安装
 
 ```
-sudo -E ./install.sh config
+./install.sh config
 ```
 
 如果你已经完成了fcitx的安装,并且可以使用它,请使用如下命令完成搜狗输入法的安装
 
 ```
-sudo -E ./install.sh install
+./install.sh install
 ```
 
 说明：参数须一一对应 否则可能出错。
