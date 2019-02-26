@@ -27,10 +27,7 @@ Config(){
     mkdir ~/.config/autostart
     cp fcitx.desktop ~/.config/autostart
     #重启时生效 默认输入法修改
-    sudo echo '#!/bin/bash' > /etc/profile.d/fcitx.sh
-    sudo echo 'export GTK_IM_MODULE=fcitx' >> /etc/profile.d/fcitx.sh
-    sudo echo 'export QT_IM_MODULE=fcitx' >> /etc/profile.d/fcitx.sh
-    sudo echo 'export XMODIFIERS=@im=fcitx' >> /etc/profile.d/fcitx.sh
+    sudo cp fcitx.sh /etc/profile.d
     #本地默认输入法
     echo 'export GTK_IM_MODULE=fcitx' >> ~/.bashrc
     echo 'export QT_IM_MODULE=fcitx' >> ~/.bashrc
