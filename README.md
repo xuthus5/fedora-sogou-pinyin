@@ -20,7 +20,7 @@ cd fedora-sogou-pinyin
 chmod +x *.sh
 ```
 
-如果你尚未安装fcitx(亦或你无法调用起fcitx),你可以使用如下命令,完成fcitx的配置安装
+如果你尚未安装fcitx(亦或你无法调用起fcitx),你可以使用如下命令,完成fcitx的配置安装(重启生效)
 
 ```
 ./install.sh config
@@ -32,8 +32,6 @@ chmod +x *.sh
 ./install.sh install
 ```
 
-说明：参数须一一对应 否则可能出错。
-
 ## 结果演示
 
 fcitx默认Ctrl+Space 快捷键切换输入法
@@ -44,5 +42,5 @@ fcitx默认Ctrl+Space 快捷键切换输入法
 若需要卸载，执行 uninstall.sh 脚本。可以干净清除
 
 ```
-sudo ./uninstall.sh
+sudo -E ./uninstall.sh
 ```
