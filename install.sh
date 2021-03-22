@@ -7,10 +7,11 @@
 Install(){
 #解决输入法依赖
     sudo dnf install -y qtwebkit libidn-devel
-    #解压和配置包 version: 2.2.0.0108
+    #解压和配置包 version: 2.4.0.3469
     tar xvJf sogou.tar.xz
     sudo cp -pr usr/ /
     sudo cp -pr etc/ /
+    sudo cp -pr opt/ /
     #链接共享库
     sudo cp /usr/lib/x86_64-linux-gnu/fcitx/fcitx-sogoupinyin.so /usr/lib64/fcitx
     sudo ln -s /usr/lib/x86_64-linux-gnu/fcitx/fcitx-punc-ng.so /usr/lib64/fcitx-punc-ng.so
@@ -33,7 +34,7 @@ Config(){
     echo 'export QT_IM_MODULE=fcitx' >> ~/.bashrc
     echo 'export XMODIFIERS=@im=fcitx' >> ~/.bashrc
     #系统默认输入法
-    
+
     echo "请重启计算机以生效！"
 }
 
