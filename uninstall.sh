@@ -31,6 +31,9 @@ rm -f /etc/xdg/autostart/fcitx-ui-sogou-qimpanel.desktop
 ### 删除bin目录
 rm -f /usr/bin/sogou*
 
+### 删除opt目录
+rm -rf /opt/sogoupinyin
+
 ### 删除lib目录
 rm -f /usr/lib/mime/packages/fcitx-ui-sogou-qimpanel
 rm -rf /usr/lib/x86_64-linux-gnu
